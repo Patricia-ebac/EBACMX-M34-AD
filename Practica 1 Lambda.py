@@ -22,3 +22,8 @@ x=lambda a,b,c:a+b+c
 print(x(5,6,20))
 
 
+# Se añade la función lambda para ejemplo con strings
+
+#Ejemplo con strings
+full_name=lambda first,last: f'Full name:{first.title()} {last.title()}'
+full_name('EBAC','Curso de Data Analysis')
