@@ -16,3 +16,11 @@ print(fin_list)
 org_list=["Hey", "mundo","EBAC"]
 fin_list=list(map(len,org_list))
 print(fin_list)
+
+#Se añade el calculo del doble de todos los números usando map()
+def addition(n):
+    return n+n
+
+numbers=[1,2,3,4]
+result=map(addition,numbers)
+print(list(result))
