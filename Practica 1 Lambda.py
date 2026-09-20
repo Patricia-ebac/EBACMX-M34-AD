@@ -17,9 +17,19 @@ print(x(120))
 x=lambda a,b:a*b
 print(x(5,60))
 
-#Ejemplo 3, conn cualquier número de argumentos
-x=lambda a,b,c:a+b+c
-print(x(5,6,20))
+
+#Se elimina el ejemplo 3 (con cualquier número de argumentos)
+#Se añade el ejemplo 4 
+
+#Ejemplo 4, Se pueden incluir funciones lambda dentro de otras funciones
+def myfun(n):
+    return lambda a:a+n
+
+#Genera la función para triplicar el número
+mytripler=myfun(2)
+
+#Aplicala función a un número
+print(mytripler(10))
 
 
 # Se añade la función lambda para ejemplo con strings
